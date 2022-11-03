@@ -1,0 +1,34 @@
+[
+  {
+    "ServiceCode": "vpc",
+    "ServiceName": "Amazon Virtual Private Cloud (Amazon VPC)",
+    "QuotaCode": "L-2AEEBF1A",
+    "QuotaName": "Rules per network ACL",
+    "MaxValue": 40,
+    "Source": "https://docs.aws.amazon.com/general/latest/gr/vpc-service.html"
+  },
+  {
+    "ServiceCode": "vpc",
+    "ServiceName": "Amazon Virtual Private Cloud (Amazon VPC)",
+    "QuotaCode": "L-93826ACB",
+    "QuotaName": "Routes per route table",
+    "MaxValue": 1000,
+    "Source": "https://docs.aws.amazon.com/general/latest/gr/vpc-service.html"
+  },
+  {
+    "ServiceCode": "vpc",
+    "ServiceName": "Amazon Virtual Private Cloud (Amazon VPC)",
+    "QuotaCode": "L-7E9ECCDB",
+    "QuotaName": "Active VPC peering connections per VPC",
+    "MaxValue": 125,
+    "Source": "https://docs.aws.amazon.com/general/latest/gr/vpc-service.html"
+  },
+  {
+    "ServiceCode": "vpc",
+    "ServiceName": "Amazon Virtual Private Cloud (Amazon VPC)",
+    "QuotaCode": "L-83CA0A9D",
+    "QuotaName": "IPv4 CIDR blocks per VPC",
+    "MaxValue": 50,
+    "Source": "https://docs.aws.amazon.com/general/latest/gr/vpc-service.html"
+  }
+]

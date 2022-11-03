@@ -49,3 +49,7 @@ Each JSON file defines an array which includes the ServiceCode, ServiceName, Quo
 
 Since the data supporting this interface must be manually scraped from various AWS documentation sources,
 contributions are greatly appreciated. The values may become obsolete without regular updates.
+
+## How can I find a hard limit?
+
+Suggest Googling for [`"aws" "quota" "up to a maximum"`](https://www.google.com/search?q=%22aws%22+%22quota%22+%22up+to+a+maximum%22) or some variant thereof.
