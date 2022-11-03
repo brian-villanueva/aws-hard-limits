@@ -10,6 +10,7 @@ parse_args() {
             ;;
         --quota-code)
             QUOTA_CODE="$2"
+            ;;
         *)
             echo "Unknown or badly placed parameter '$1'." 1>&2
             exit 1
@@ -22,16 +23,22 @@ while [[ "$#" -ge 2 ]]; do
     shift; shift
 done
 
-if [ -z "$SERVICE_CODE" ];
+if [ -z "$SERVICE_CODE" ]; then
   echo "No service code given. Retry with --service-code argument."
   exit 1
 fi
 
 GITHUB_SOURCE="https://raw.githubusercontent.com/brian-villanueva/aws-hard-limits/master/aws-services/${SERVICE_CODE}.json"
 
-if [ -z "${QUOTA_CODE}" ];
-  curl -s "${GITHUB_SOURCE}"
+if curl --output /dev/null --silent --head --fail "${GITHUB_SOURCE}"; then
+
+  if [ -z "${QUOTA_CODE}" ]; then
+    curl -s "${GITHUB_SOURCE}" | jq
+  else
+    curl -s "${GITHUB_SOURCE}" | jq --arg qc "${QUOTA_CODE}" '.[] | select(.QuotaCode == $qc)'
+  fi
+
 else
-  echo "TODO: select matching quota code"
-  #curl -s "${GITHUB_SOURCE}" | jq  ...
+  echo "Unsupported service code: ${SERVICE_CODE}"
+  exit 1
 fi
