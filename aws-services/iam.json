@@ -1,0 +1,42 @@
+[
+  {
+    "ServiceCode": "iam",
+    "ServiceName": "AWS Identity and Access Management (IAM)",
+    "QuotaCode": "L-E95E4862",
+    "QuotaName": "Customer managed policies per account",
+    "MaxValue": 5000,
+    "Source": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html"
+  },
+  {
+    "ServiceCode": "iam",
+    "ServiceName": "AWS Identity and Access Management (IAM)",
+    "QuotaCode": "L-0DA4ABF3",
+    "QuotaName": "Managed policies per role",
+    "MaxValue": 20,
+    "Source": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html"
+  },
+  {
+    "ServiceCode": "iam",
+    "ServiceName": "AWS Identity and Access Management (IAM)",
+    "QuotaCode": "L-4019AD8B",
+    "QuotaName": "Managed policies per user",
+    "MaxValue": 20,
+    "Source": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html"
+  },
+  {
+    "ServiceCode": "iam",
+    "ServiceName": "AWS Identity and Access Management (IAM)",
+    "QuotaCode": "L-C07B4B0D",
+    "QuotaName": "Role trust policy length",
+    "MaxValue": 4096,
+    "Source": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html"
+  },
+  {
+    "ServiceCode": "iam",
+    "ServiceName": "AWS Identity and Access Management (IAM)",
+    "QuotaCode": "L-FE177D64",
+    "QuotaName": "Roles per account",
+    "MaxValue": 5000,
+    "Source": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html"
+  }
+]
