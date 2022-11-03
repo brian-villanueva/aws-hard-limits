@@ -17,7 +17,7 @@ Service Quotas CLI [list-service-quotas](https://docs.aws.amazon.com/cli/latest/
 
 ## CLI Interface
 
-The aws-hard-limits.sh script reads the data from GitHub for a given service-code and returns it, optionally filtered by a quota code.
+The aws-hard-limits.sh script reads the data from GitHub for a given service code and returns it, optionally filtered by a quota code.
 ```shell
 ./aws-hard-limits.sh --service-code iam --quota-code L-C07B4B0D
 ```
