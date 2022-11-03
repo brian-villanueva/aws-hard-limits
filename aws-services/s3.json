@@ -1,0 +1,10 @@
+[
+  {
+    "ServiceCode": "s3",
+    "ServiceName": "Amazon Simple Storage Service (Amazon S3)",
+    "QuotaCode": "L-DC2B2D3D",
+    "QuotaName": "Buckets",
+    "MaxValue": 1000,
+    "Source": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html"
+  }
+]
