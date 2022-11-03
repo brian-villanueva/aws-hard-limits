@@ -44,6 +44,9 @@ Each JSON file defines an array which includes the ServiceCode, ServiceName, Quo
 ]
 ```
 
+The goal is to capture the hard limits **for quotas that are adjustable**. If a quota is not adjustable, the
+hard limit and the default value are the same (and is already available from the service-quotas API/CLI).
+
 ## Contribution
 
 Since the data supporting this interface must be manually scraped from various AWS documentation sources,
