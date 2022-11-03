@@ -1,19 +1,20 @@
-# aws-hard-limits
-Repository for storage of AWS Hard Limits, which are **not** currently available from AWS Service Quotas API.
+# "What is the hard limit for this in AWS?"
 
-## "What is the hard limit for this in AWS?"
+**The goal of this project is to provide a CLI to supplement
+the Service Quotas API/CLI, so that hard limits can be checked
+in an automated manner.**
 
-While AWS provides **soft limit** information through the Service Quotas API, they do not
+While AWS provides **soft limit** information through the Service Quotas API, they do **not**
 provide information about the **hard limits** for these quotas. While soft limits are
 important for making small adjustments, they don't tell you when you are getting close
 to a critical threshold. 
 
-_**The goal of this project is to provide a CLI shim to supplement
-the Service Quotas API/CLI, so that hard limits can be checked 
-in an automated manner.**_
-
-The structure of the data and CLI interface intentionally mimics that of the
+The structure of the data and the provided CLI interface intentionally mimics that of the
 Service Quotas CLI [list-service-quotas](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-service-quotas.html) command.
+
+The goal (at least initially) is to capture the hard limits **for quotas that are adjustable**. 
+If a quota is not adjustable, then the hard limit and the default value are the same. This information
+is already available from the service-quotas API/CLI.
 
 ## CLI Interface
 
@@ -43,9 +44,6 @@ Each JSON file defines an array which includes the ServiceCode, ServiceName, Quo
     }
 ]
 ```
-
-The goal is to capture the hard limits **for quotas that are adjustable**. If a quota is not adjustable, the
-hard limit and the default value are the same (and is already available from the service-quotas API/CLI).
 
 ## Contribution
 
