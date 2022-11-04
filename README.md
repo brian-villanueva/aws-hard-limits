@@ -1,4 +1,4 @@
-# "What is the hard limit for this in AWS?"
+# What is the hard limit for this quota in AWS?
 
 **The goal of this project is to provide a CLI to supplement
 the Service Quotas API/CLI, so that hard limits can be checked
