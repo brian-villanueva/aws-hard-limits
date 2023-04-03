@@ -46,6 +46,7 @@ Each JSON file defines an array which includes the ServiceCode, ServiceName, Quo
 ```
 
 ## TODO
+* Lambda Burst Limit (per account-region)
 * EKS max 1000 nodes per cluster
 * MSK max 3 serverless clusters per account
 
