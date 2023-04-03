@@ -46,9 +46,9 @@ Each JSON file defines an array which includes the ServiceCode, ServiceName, Quo
 ```
 
 ## TODO
-* Lambda Burst Limit (per account-region)
-* EKS max 1000 nodes per cluster - "Additionally, there is a limit of 10 managed node groups per EKS cluster, each with a maximum of 100 nodes per node group. This means you can have a maximum of 1000 managed nodes running on a given EKS cluster." ([see here](https://aws.amazon.com/blogs/containers/eks-managed-node-groups/))
-* MSK max 3 serverless clusters per account
+* Lambda Burst Limit ([per account-region](https://docs.aws.amazon.com/lambda/latest/dg/burst-concurrency.html)) -- 500, 1000, 3000 depending on region.
+* EKS max 13,500 nodes per cluster - "We’ve also increased the capacity of groups and their default service quotas, allowing for 30 groups of 450 nodes each." ([see here](https://aws.amazon.com/blogs/containers/catching-up-with-managed-node-groups-in-amazon-eks/)).
+* MSK max 3 serverless clusters per account.
 
 ## Contribution
 
