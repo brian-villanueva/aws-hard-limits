@@ -45,6 +45,10 @@ Each JSON file defines an array which includes the ServiceCode, ServiceName, Quo
 ]
 ```
 
+## TODO
+* EKS max 1000 nodes per cluster
+* MSK max 3 serverless clusters per account
+
 ## Contribution
 
 Since the data supporting this interface must be manually scraped from various AWS documentation sources,
